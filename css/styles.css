@@ -152,35 +152,43 @@ header {
 
 .subtitle,
 .text {
+  display: none;
   font-family: "Montserrat", sans-serif;
 }
-
+.title-transparent {
+  display: none;
+}
 .text {
   transition: 1s;
   font-weight: 100;
   line-height: 25px;
-  color: transparent;
+  color: #ffffff;
+  /*color: transparent;*/
 }
 
-.title .subtitle {
+.subtitle {
   transition: 1s;
   font-weight: 600;
   padding-bottom: 20px;
   font-size: 25px;
-  color: transparent;
+  color: #ffffff;
+  /*color: transparent;*/
 }
-
-.portfolio-item-wrapper:hover .subtitle {
+.subtitle-active,
+.text-active {
+  display: block;
+}
+/*.portfolio-item-wrapper:active .subtitle {
   font-size: 25px;
   font-weight: 600;
   color: #ffffff;
 }
 
-.portfolio-item-wrapper:hover .text {
+.portfolio-item-wrapper:active .text {
   font-weight: 100;
   color: #ffffff;
   line-height: 25px;
-}
+}*/
 .img-darken {
   transition: 1s;
   filter: brightness(10%);
