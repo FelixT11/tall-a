@@ -122,11 +122,11 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 50px;
+  gap: 50px;
 }
 
 .portfolio-item-wrapper {
   position: relative;
-  padding: 50px;
 }
 
 .tshirt-img {
@@ -148,11 +148,12 @@ header {
   height: 100%;
   text-align: center;
   padding: 20%;
+  display: none;
 }
 
 .subtitle,
 .text {
-  display: none;
+  /* display: none; */
   font-family: "Montserrat", sans-serif;
 }
 .title-transparent {
@@ -163,6 +164,7 @@ header {
   font-weight: 100;
   line-height: 25px;
   color: #ffffff;
+  /* display: none; */
   /*color: transparent;*/
 }
 
@@ -189,9 +191,13 @@ header {
   color: #ffffff;
   line-height: 25px;
 }*/
-.img-darken {
+.img-darken .tshirt-img {
   transition: 1s;
   filter: brightness(10%);
+}
+
+.show-text .title {
+  display: block;
 }
 
 /* About Us
